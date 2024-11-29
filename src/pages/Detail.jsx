@@ -28,7 +28,6 @@ export default function Detail() {
 
   if (isLoading) return <div style={{ fontSize: 36 }}>로딩중...</div>;
   if (error) {
-    console.error(error);
     return (
       <div style={{ fontSize: 24 }}>에러가 발생했습니다: {error.message}</div>
     );
