@@ -9,6 +9,7 @@ export default function Detail() {
   const { data, isPending, error } = useQuery({
     queryKey: ["todos", id],
     queryFn: getDetail,
+    meta: { source: "Detail" },
   });
   console.log("data:", data);
 
